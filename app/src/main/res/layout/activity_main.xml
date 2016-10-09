@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.krisz.calculatoradvanced.MainActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="1"
+                android:id="@+id/one"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onNumberClick" />
+
+            <Button
+                android:text="2"
+                android:id="@+id/two"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onNumberClick" />
+
+            <Button
+                android:text="3"
+                android:id="@+id/three"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onNumberClick" />
+
+            <Button
+                android:text="+"
+                android:id="@+id/plus"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onClickOperator" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="4"
+                android:id="@+id/four"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onNumberClick" />
+
+            <Button
+                android:text="5"
+                android:id="@+id/five"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onNumberClick" />
+
+            <Button
+                android:text="6"
+                android:id="@+id/six"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onNumberClick" />
+
+            <Button
+                android:text="-"
+                android:id="@+id/minus"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onClickOperator" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="7"
+                android:id="@+id/seven"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onNumberClick" />
+
+            <Button
+                android:text="8"
+                android:id="@+id/eight"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onNumberClick" />
+
+            <Button
+                android:text="9"
+                android:id="@+id/nine"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onNumberClick" />
+
+            <Button
+                android:text="*"
+                android:id="@+id/multi"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onClickOperator" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="C"
+                android:id="@+id/clear"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onClickClear" />
+
+            <Button
+                android:text="0"
+                android:id="@+id/zero"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onNumberClick" />
+
+            <Button
+                android:text="="
+                android:id="@+id/equal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onClickEqual" />
+
+            <Button
+                android:text="/"
+                android:id="@+id/div"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onClickOperator" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/background_light"
+        android:textColor="@android:color/black"
+        android:textSize="70sp"
+        android:text="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:gravity="bottom|end" />
+</RelativeLayout>
